@@ -14,7 +14,6 @@ from dbt_checkpoint.utils import (
     get_parent_childs,
     get_source_schemas,
 )
-import json
 
 def check_column_cnt(
     paths: Sequence[str],
@@ -33,8 +32,8 @@ def check_column_cnt(
             get_parent_childs(
                 manifest=manifest,
                 obj=schema,
-                manifest_node="nodes",
-                node_types=["model"],
+                manifest_node="sources",
+                node_types=["source"],
             )
         )
 

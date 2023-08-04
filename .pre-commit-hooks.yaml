@@ -37,6 +37,12 @@
   entry: check-model-has-all-columns
   language: python
   types_or: [sql, yaml]
+- id: check-model-has-columns-by-name
+  name: Check the model has all specified columns
+  description: placeholder
+  entry: check-model-has-columns-by-name
+  language: python
+  types_or: [sql, yaml]  
 - id: check-model-has-description
   name: Check the model has description
   description: Ensures that the model has description in properties file.
