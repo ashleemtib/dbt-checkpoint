@@ -31,6 +31,12 @@ class JsonOpenError(RuntimeError):
 class CompilationException(RuntimeError):
     pass
 
+@dataclass
+class Column:
+    column_id: str
+    column_name: str
+    filename: str
+    node: Dict[str, Any]
 
 @dataclass
 class Model:
