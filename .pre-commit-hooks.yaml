@@ -145,6 +145,12 @@
   entry: check-source-has-all-columns
   language: python
   types_or: [yaml]
+- id: check-source-has-columns-by-group
+  name: Check the source has specified columns.
+  description: Ensures that specific columns are present in the physical table.
+  entry: check-source-has-columns-by-group
+  language: python
+  types_or: [yaml]
 - id: check-source-table-has-description
   name: Check the source table has description
   description: Ensures that the source table has description in properties file.
